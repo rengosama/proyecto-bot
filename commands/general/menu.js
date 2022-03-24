@@ -64,8 +64,7 @@ module.exports = {
 
                 const fila = new discord.MessageActionRow().addComponents(btn1,btn2,btn3);
 			
-			message.channel.send({embeds:[me], components:[fila]});
-
+			return await message.channel.send({embeds:[me], components:[fila]});
 
 	},
 };
